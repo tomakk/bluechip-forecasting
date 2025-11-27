@@ -145,7 +145,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For questions about this research, please contact: [email address]
+For questions about this research, please contact: ktomak@mindspaceai.nl
 
 ---
 
