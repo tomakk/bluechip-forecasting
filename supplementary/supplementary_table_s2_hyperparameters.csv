@@ -1,0 +1,23 @@
+Model,Model Family,Key Hyperparameters,Feature Set
+Ridge,Machine Learning,"alpha=1.0, random_state=42",18 features (12 lags + 6 rolling stats)
+ElasticNet,Machine Learning,"alpha=0.5, l1_ratio=0.5, random_state=42",18 features (12 lags + 6 rolling stats)
+XGBoost,Machine Learning,"n_estimators=100, max_depth=3, learning_rate=0.1, subsample=0.8, colsample_bytree=0.8",18 features (12 lags + 6 rolling stats)
+GradientBoosting,Machine Learning,"n_estimators=100, max_depth=3, learning_rate=0.1, subsample=0.8",18 features (12 lags + 6 rolling stats)
+LightGBM,Machine Learning,"n_estimators=100, num_leaves=31, learning_rate=0.1, feature_fraction=0.8",18 features (12 lags + 6 rolling stats)
+CatBoost,Machine Learning,"iterations=100, depth=3, learning_rate=0.1, random_state=42",18 features (12 lags + 6 rolling stats)
+AdaBoost,Machine Learning,"n_estimators=100, learning_rate=0.1, random_state=42",18 features (12 lags + 6 rolling stats)
+SVR,Machine Learning,"kernel=rbf, C=1.0, epsilon=0.1",18 features (12 lags + 6 rolling stats)
+RandomForest,Machine Learning,"n_estimators=100, max_depth=10, random_state=42",18 features (12 lags + 6 rolling stats)
+KNN,Machine Learning,n_neighbors=5,18 features (12 lags + 6 rolling stats)
+LSTM,Deep Learning,"2 layers, 128 units, dropout=0.2, epochs=50, batch_size=32, lr=0.001",18 features (12 lags + 6 rolling stats)
+GRU,Deep Learning,"2 layers, 128 units, dropout=0.2, epochs=50, batch_size=32, lr=0.001",18 features (12 lags + 6 rolling stats)
+Transformer,Deep Learning,"2 layers, 4 heads, d_model=128, d_ff=512, dropout=0.1, epochs=50",18 features (12 lags + 6 rolling stats)
+sLSTM,xLSTM,"2 layers, 128 units, exponential gating, dropout=0.2, epochs=50",18 features (12 lags + 6 rolling stats)
+mLSTM,xLSTM,"2 layers, 128 units, matrix memory, dropout=0.2, epochs=50",18 features (12 lags + 6 rolling stats)
+Chronos,Foundation,"pretrained T5-small, context_length=512, temperature=1.0 (zero-shot)",raw time series (zero-shot)
+TimesFM,Foundation,pretrained decoder-only transformer (zero-shot),raw time series (zero-shot)
+SARIMA,Classical,"order=(1,1,1)(1,1,1,12), seasonal_period=12",lagged values only
+ETS,Classical,automatic component selection via AIC,lagged values + trend + seasonal
+Theta,Classical,simple exponential smoothing with drift,lagged values + trend
+Naive,Baseline,forecast = last observed value,single lag (t-1)
+Seasonal-Naive,Baseline,forecast = value from 12 months ago,single lag (t-12)

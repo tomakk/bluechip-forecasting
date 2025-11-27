@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "mean_all": 31.60796206822575,
+    "median_all": 6.20911476700076,
+    "trimmed_mean_10pct": 31.60796206822575,
+    "mean_excluding_outliers": 8.0709969216696,
+    "n_outliers": 2,
+    "n_non_outliers": 7
+  },
+  "outlier_indicators": [
+    "Real GDP (combined)",
+    "Corporate Profits"
+  ],
+  "recommendation": "Report trimmed mean (10%) as primary summary statistic; separate analysis for outlier indicators"
+}
